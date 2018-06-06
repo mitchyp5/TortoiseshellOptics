@@ -1,0 +1,209 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+/* Header Section */
+header {
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 33rem;
+  padding-top: 1rem;
+}
+nav {
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+ul{
+  margin-right: 2rem
+}
+
+ul li {
+  display: inline;
+  padding: 0 0.5rem;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.small-menu {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.banner {
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  margin-top: 12rem;
+  margin-right: -2rem;
+}
+
+/* Services Section */
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.services img {
+  margin-bottom: 1rem;
+}
+
+.paper img {
+  width: 3.5rem;
+}
+
+.fitting img, .delivery img {
+  width: 5rem;
+}
+
+.fitting span {
+  padding-top:
+}
+
+.fitting div {
+  display: block;
+  padding-top: 1.65rem;
+}
+
+.delivery div {
+  padding-top: 1.25rem;
+}
+
+/* Info Section */
+.info-container {
+  padding-top: 3rem;
+  display: flex;
+}
+
+.info {
+  max-width: 35%;
+  margin: 5%
+}
+
+.info p {
+  padding: 1rem 0;
+}
+.info-title {
+  max-width: 10rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  color: white;
+}
+
+/* Footer Section */
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-top: 0rem;
+    height: 22rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .banner {
+    margin-top: 6.5rem;
+    padding: 1.5rem 4rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+  }
+  .info-container {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .banner {
+    padding: 0.75rem 0;
+    margin-top: 9rem;
+    margin-right: 0;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
+  }
+  .flex {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .small-menu {
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  .company {
+    display: none;
+  }
+  .product-container {
+    flex-direction: column;
+  }
+  .services {
+    justify-content: center;
+    padding: 1.54rem;
+    font-size: 0.77rem;
+  }
+  .delivery div, .fitting div {
+    padding-top: 0;
+  }
+  .info {
+    width: 100%;
+
+  }
+}
